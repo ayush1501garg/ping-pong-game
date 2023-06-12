@@ -1,0 +1,111 @@
+:root
+{
+    --time-duration:9s;
+}
+body {
+    margin: 0px;
+    background-color: #B799FF;
+}
+body::-webkit-scrollbar
+{
+    overflow:hidden;
+    display:none;
+}
+h3
+{
+    margin:0px;
+}
+#rod-one {
+	position: absolute;
+	top: 0%;
+	background-color: #8B1874;
+	border: 2px solid white;
+    width: 20vw;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 7vh;
+    padding:5px;
+    text-align: center;
+    color: white;
+    font-size: larger;
+
+}
+#rod-two {
+	position: absolute;
+	bottom: 0%;
+    background-color: #FC4F00;
+    border-radius: 20px;;
+	border: 2px solid white;
+    width: 20vw;
+    box-sizing: border-box;
+    height: 7vh;
+    padding:5px;
+    text-align: center;
+    color: white;
+    font-size: larger;
+}
+#ball {
+	height: 5vw;
+    width: 5vw;
+    position:absolute;
+    border-radius: 50%;
+    background-color: #16FF00;
+    border: 2px solid black;
+
+    box-sizing: border-box;
+}
+
+#rules{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40%;
+    top: 40vh;
+    left: 30%;
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40%;
+    top: 50vh;
+    left: 30%;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#score{
+    font-size: 3rem;
+
+}
+
+.animate-top-right
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(-2000px);
+}
+.animate-bottom-right
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(2000px);
+}
+.animate-top-left
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(-2000px);
+}
+.animate-bottom-left
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(2000px);
+}
